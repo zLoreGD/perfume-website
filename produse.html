@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class = "main__header" id = "despre-noi">
+            <ul class = "header__list">
+                <li><a href = "index.html"><img class = "logo" src = "logo2.png"></a></li>
+                <li><a href = "#" class="scroll-link" data-target="despre-noi"><h1>Despre Noi</h1></a></li>
+                <li><a href = "#" class="scroll-link" data-target="contacte"><h1>Contacte</h1></a></li>
+                <li><a href = "#" class="scroll-link" data-target="produse"><h1>Produse</h1></a></li>
+                <li id="profile-menu-container"><a class = "button__signup" href = "./signup.html"><h1>SIGN UP</h1></a></li>
+                
+            </ul>
+            
+        </div>
+    </header>
+
+    <div class = "produse__pagina">
+        <div class = "produs__exemplu">
+            <img src = "dior.png">
+            <h1>Dior Sauvage <span class = "attention__grabber">(25ML/50ML/100ML)</span></h1>
+        </div>
+        <div class = "produs__exemplu">
+            <img src = "pacco.png">
+            <h1>Pacco Rabanne 1 Million <span class = "attention__grabber">(25ML/50ML/100ML)</span></h1>
+        </div>
+        <div class = "produs__exemplu">
+            <img src = "ysl.png">
+            <h1>YSL <span class = "attention__grabber">(25ML/50ML/100ML)</span></h1>
+        </div>
+        <div class = "produs__exemplu">
+            <img src = "jpg.png">
+            <h1>JPG <span class = "attention__grabber">(25ML/50ML/100ML)</span></h1>
+        </div>
+        <div class = "produs__exemplu">
+            <img src = "jpglebeau.png">
+            <h1>JPG le beau <span class = "attention__grabber">(25ML/50ML/100ML)</span></h1>
+        </div>
+        <div class = "produs__exemplu">
+            <img src = "swy.png">
+            <h1>Stronger With You <span class = "attention__grabber">(25ML/50ML/100ML)</span></h1>
+        </div>
+    </div>
+</body>
+<footer id="contacte">
+    <div class = "footer__image">
+        <img src = "logo2.png">
+    </div>
+    <div class = "footer__revista">
+        <h1>Revista noastră</h1>
+        <form>
+        <input id = "email-input" type = "email" placeholder = "Introduceti email-ul dvs" required>
+        <button type="submit" onclick="inscriere()">INSCRIE-TE</button>
+    </form>
+    </div>
+    <div class = "footer__navigare">
+        <h1>Navigare</h1>
+        <a href = "#" class="scroll-link" data-target="despre-noi"><p>Despre Noi</p></a>
+        <a href = "#" class="scroll-link" data-target="produse"><p>Produse</p></a>
+    </div>
+    <div class = "footer__contacte" >
+        <span><img src ="insta.png"><p>perfumeCompany.md</p></span>
+        <span><img src ="facebook.png"><p>perfumeCompany</p></span>
+        <span><img src ="mail.png"><p>perfumeCompany@gmail.com</p></span>
+    </div>
+</footer>
+<script src = "script.js"></script>
+</html>
