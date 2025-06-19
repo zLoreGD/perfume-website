@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     links.forEach(link => {
         link.addEventListener("click", function (e) {
-            e.preventDefault(); // Previne acțiunea implicită a linkului
+            e.preventDefault(); 
             
             const targetId = this.getAttribute("data-target");
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 50, // Ajustează poziția finală
+                    top: targetElement.offsetTop - 50, 
                     behavior: "smooth"
                 });
             }
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 function validateEmail(email) {
-    // Expresie regulată pentru validarea unui email
+
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
@@ -32,7 +32,7 @@ function inscriere(){
             alert("Vă rugăm să introduceți un email valid!");
         } else {
             alert("Înscriere realizată cu succes!");
-            emailInput.value = ""; // Șterge inputul după înscriere
+            emailInput.value = "";
         }
 
     
@@ -43,19 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
     products.forEach(product => {
         product.addEventListener("mouseenter", () => {
             let angle = 0;
-            let direction = 1; // 1 = right, -1 = left
-            product.style.transition = "transform 0.3s ease-in-out"; // Smooth scaling
+            let direction = 1;
+            product.style.transition = "transform 0.3s ease-in-out";
 
-            // Scale up smoothly
+            
             product.style.transform = "scale(1.05)";
 
-            // Start the rotation loop
+            
             const shakeInterval = setInterval(() => {
-                angle = direction * 3; // Rotate 3 degrees left/right
+                angle = direction * 3; 
                 product.style.transform = `scale(1.05) rotate(${angle}deg)`;
                 
-                direction *= -1; // Switch direction for next move
-            }, 300); // Smooth transition time
+                direction *= -1; 
+            }, 300);
 
             product.dataset.shakeInterval = shakeInterval;
         });
